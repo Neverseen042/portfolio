@@ -25,7 +25,7 @@ export class ProjectService {
       title: 'Multi-User Blog & Management System',
       description: 'An interactive web application featuring authentication, user-specific data storage, dynamic blog creation, and real-time content display.',
       technologies: ['JavaScript', 'Firebase Auth', 'Firestore', 'GitHub Pages'],
-      link: 'https://neverseen042.github.io/multi-user/'
+      link: 'https://postblog-neverseen.netlify.app/'
     }
   ];
 
