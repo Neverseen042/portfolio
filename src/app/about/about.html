@@ -1,0 +1,23 @@
+<section class="container">
+  <h2 class="title">About Me</h2>
+  
+  <div class="card about-card">
+    <!-- Profile Picture Container -->
+    <div class="profile-container">
+      <img src="/imaged.jpg" alt="Profile Picture" class="profile-img" />
+    </div>
+
+    <div class="about-text">
+      <p>
+        I am a software engineering student and developer focused on building structured, responsive, and performant web products with modern web technologies.
+      </p>
+    </div>
+  </div>
+
+  <h3 class="subtitle">Core Skills</h3>
+  <div class="skills-grid">
+    <div class="skill-item" *ngFor="let skill of skills">
+      <span class="bullet">▪</span> {{ skill }}
+    </div>
+  </div>
+</section>

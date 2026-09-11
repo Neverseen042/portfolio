@@ -1,0 +1,26 @@
+.title { font-size: 2rem; margin-bottom: 24px; }
+.projects-list { display: flex; flex-direction: column; gap: 18px; }
+.project-header { display: flex; justify-content: space-between; align-items: center; }
+.project-header h3 { font-size: 1.2rem; }
+.arrow { font-size: 1.2rem; color: #ffffff; }
+.description { color: #a1a1aa; margin: 12px 0 16px; font-size: 0.95rem; }
+.tech-stack { display: flex; flex-wrap: wrap; gap: 8px; }
+.tech-tag {
+  font-size: 0.75rem;
+  background-color: #1e1e1e;
+  color: #eaeaea;
+  padding: 4px 10px;
+  border-radius: 2px;
+  border: 1px solid #333333;
+}
+.title-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.title-link:hover {
+  color: #a1a1aa;
+}
+
+

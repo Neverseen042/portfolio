@@ -1,0 +1,19 @@
+<section class="container">
+  <h2 class="title">Selected Projects</h2>
+  <div class="projects-list">
+    <div class="card project-card" *ngFor="let project of projects">
+      <div class="project-header">
+        <h3>
+          <a [href]="project.link" target="_blank" rel="noopener noreferrer" class="title-link">
+            {{ project.title }}
+          </a>
+        </h3>
+        <a [href]="project.link" target="_blank" rel="noopener noreferrer" class="arrow" title="View live site">↗</a>
+      </div>
+      <p class="description">{{ project.description }}</p>
+      <div class="tech-stack">
+        <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
+      </div>
+    </div>
+  </div>
+</section>

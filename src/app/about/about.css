@@ -1,0 +1,69 @@
+.title {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin: 36px 0 16px;
+}
+
+/* About Card Layout */
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Profile Picture Styling */
+.profile-container {
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  filter: grayscale(100%); /* Keeps it matching your B&W theme */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.profile-img:hover {
+  filter: grayscale(0%); /* Returns to natural color on hover */
+  transform: scale(1.03);
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  color: #d1d1d1;
+  line-height: 1.8;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.skill-item {
+  background: #141414;
+  border: 1px solid #262626;
+  padding: 14px 18px;
+  border-radius: 4px;
+}
+
+.bullet {
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 640px) {
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}

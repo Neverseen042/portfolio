@@ -1,0 +1,36 @@
+<section class="container">
+  <h2 class="title">Contact</h2>
+  <div class="card form-container">
+    <div *ngIf="submitted" class="success-banner">
+      ✓ Message sent successfully.
+    </div>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" formControlName="name" placeholder="Your name" />
+        <small class="error" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+          Name must be at least 2 characters.
+        </small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" placeholder="you@example.com" />
+        <small class="error" *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+          Please enter a valid email address.
+        </small>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" formControlName="message" placeholder="Write your message..."></textarea>
+        <small class="error" *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+          Message must be at least 10 characters.
+        </small>
+      </div>
+
+      <button type="submit" class="btn" [disabled]="contactForm.invalid">Send Message</button>
+    </form>
+  </div>
+</section>
